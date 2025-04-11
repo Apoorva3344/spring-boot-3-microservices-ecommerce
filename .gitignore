@@ -1,0 +1,8 @@
+# Ignore IDE files
+.metadata/
+.idea/
+*.iml
+
+# Ignore build/dependency folders
+target/
+bin/

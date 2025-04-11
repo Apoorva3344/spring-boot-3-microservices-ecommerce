@@ -1,0 +1,98 @@
+/* General styles for the container */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #ffffff; /* White background like home page */
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Same shadow as home page */
+  border: 2px solid #9C27B0; /* Medium purple border */
+}
+
+/* Heading styles */
+h2.text-2xl.font-bold.mb-4 {
+  color: #673AB7; /* Deep purple like home page */
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Success message styles */
+h4.text-green-500 {
+  color: #4CAF50;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Label styles */
+label.block.text-gray-700 {
+  font-weight: 700;
+  color: #673AB7; /* Deep purple */
+  margin-bottom: 0.5rem;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 2px solid #9C27B0; /* Medium purple */
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #E91E63; /* Pink */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.3);
+}
+
+/* Error message styles */
+.text-red-500 {
+  color: #E91E63; /* Pink for errors */
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  background: rgba(233, 30, 99, 0.1); /* Light pink background */
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* Button styles */
+button.bg-green-500 {
+  background: linear-gradient(to right, #9C27B0, #E91E63);
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+button.bg-green-500:hover {
+  background: linear-gradient(to right, #E91E63, #9C27B0);
+  transform: scale(1.05);
+}
+
+button.bg-green-500:disabled {
+  background: #D1C4E9; /* Light purple */
+  cursor: not-allowed;
+  opacity: 0.7;
+}

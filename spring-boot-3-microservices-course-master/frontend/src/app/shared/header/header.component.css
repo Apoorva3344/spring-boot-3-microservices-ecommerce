@@ -1,0 +1,72 @@
+/* General styles for the header */
+nav {
+  background: linear-gradient(to right, #673AB7, #9C27B0, #E91E63);
+  border-bottom: 3px solid #9C27B0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 1.2rem 2.5rem;
+}
+
+/* Container for the header content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo or brand name */
+a.flex.items-center span {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a.flex.items-center:hover span {
+  color: #FFD740;
+}
+
+/* Desktop menu */
+ul.flex.items-center.space-x-8 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+ul.flex.items-center.space-x-8 li {
+  list-style: none;
+}
+
+/* Fix overlapping elements */
+ul.flex.items-center.space-x-8 li {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Add space between username and logout */
+}
+
+/* Username styles */
+.username {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  margin-right: 1rem; /* Add margin to separate from logout */
+}
+
+/* Login & Logout buttons */
+a.text-white {
+  background: linear-gradient(to right, #9C27B0, #E91E63);
+  padding: 0.9rem 1.8rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+a.text-white:hover {
+  background: linear-gradient(to right, #E91E63, #9C27B0);
+  transform: scale(1.05);
+}

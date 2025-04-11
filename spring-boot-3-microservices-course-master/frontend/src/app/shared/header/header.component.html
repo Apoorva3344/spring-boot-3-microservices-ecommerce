@@ -1,0 +1,32 @@
+<nav class="bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg">
+    <div class="container flex flex-wrap justify-between items-center mx-auto px-4 py-3">
+        <a href="/" class="flex items-center">
+            <span class="self-center text-2xl font-bold whitespace-nowrap text-white">
+                Spring Boot Microservices Shop
+            </span>
+        </a>
+
+        <div class="w-auto">
+            <ul class="flex items-center space-x-8">
+                <li>
+                    @if (isAuthenticated) {
+                        <p class="username">Hi {{ username | titlecase }}</p> <!-- Updated line -->
+                        <a
+                            (click)="logout()"
+                            class="text-white hover:bg-purple-700 px-4 py-2 rounded-lg transition-colors duration-300"
+                        >
+                            Logout
+                        </a>
+                    } @else {
+                        <a
+                            (click)="login()"
+                            class="text-white hover:bg-purple-700 px-4 py-2 rounded-lg transition-colors duration-300"
+                        >
+                            Login
+                        </a>
+                    }
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
