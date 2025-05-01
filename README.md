@@ -71,6 +71,9 @@ cd path/to/SpringBoot_Microservices_Ecommerce_Computing_Masters_Project
 | Grafana              | Metrics Visualization              |
 | Loki / Tempo         | Logging & Distributed Tracing      |
 
+![Architecture](https://github.com/user-attachments/assets/b71ea48e-c4bc-4ae2-9dc0-f067ad91b266)
+
+
 ---
 
 ## 5. Docker Hub Repository
