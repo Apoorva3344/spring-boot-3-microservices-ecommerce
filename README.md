@@ -1,19 +1,13 @@
 # Teesside University - Computing Masters Project Artifact  
 ## E-Commerce Microservices Application (Kubernetes Deployment)
 
----
-
 This document offers **detailed instructions** to set up and run the **Kubernetes-deployed microservices-based e-commerce project** submitted as part of the MSc Computing Masters Project artifact by **D3828560**.
-
----
 
 ## 1. System Requirements
 
 - A 64-bit processor and at least **8 GB of RAM**  
 - Operating system: **Linux**, **macOS**, or **Windows 10/11**  
 - An internet connection to download necessary files
-
----
 
 ## 2. Required Tools to Install
 
@@ -23,21 +17,15 @@ This document offers **detailed instructions** to set up and run the **Kubernete
 - During installation → **Enable Kubernetes** feature in settings
 - After installation, verify:
 
-```bash
 docker --version
 kubectl version --client
-```
 
 ### b. Kubectl CLI
 
 - Install Kubectl: [https://kubernetes.io/docs/tasks/tools/](https://kubernetes.io/docs/tasks/tools/)
 - Verify installation:
 
-```bash
 kubectl get nodes
-```
-
----
 
 ## 3. Download the Project ZIP Folder
 
@@ -45,15 +33,12 @@ kubectl get nodes
 
 ### Steps:
 
-```bash
 # Unzip folder to desktop
-unzip SpringBoot_Microservices_Ecommerce_Computing_Masters_Project.zip
+unzip D3828560_ecommerce_microservices_mastersproject_artefact.zip
 
 # Navigate to project folder
-cd path/to/SpringBoot_Microservices_Ecommerce_Computing_Masters_Project
-```
+cd path/to/D3828560_ecommerce_microservices_mastersproject_artefact
 
----
 
 ## 4. Project Overview
 
@@ -74,8 +59,6 @@ cd path/to/SpringBoot_Microservices_Ecommerce_Computing_Masters_Project
 ![Architecture](https://github.com/user-attachments/assets/b71ea48e-c4bc-4ae2-9dc0-f067ad91b266)
 
 
----
-
 ## 5. Docker Hub Repository
 
 - Docker Hub URL: [https://hub.docker.com/repositories/apoorva3344](https://hub.docker.com/repositories/apoorva3344)
@@ -83,9 +66,7 @@ cd path/to/SpringBoot_Microservices_Ecommerce_Computing_Masters_Project
   `Username: apoorva3344`  
   `Password: Docker@2025`
 
-> *Note: All Kubernetes YAML files already reference public container images. Manual login is not necessary.*
-
----
+*Note: All Kubernetes YAML files already reference public container images. Manual login is not necessary.*
 
 ## 6. Deploying to Kubernetes
 
@@ -98,18 +79,13 @@ cd path/to/SpringBoot_Microservices_Ecommerce_Computing_Masters_Project
 
 ### b. Apply Kubernetes Configurations
 
-```bash
 kubectl apply -f k8s/
-```
 
 ### c. Check Deployment Status
 
-```bash
 kubectl get pods
 kubectl get svc
-```
 
----
 
 ## 7. Accessing the Application
 
@@ -133,7 +109,6 @@ kubectl port-forward svc/mongodb 27017:27017
 
 # MySQL Database
 kubectl port-forward svc/mysql 3306:3306
-```
 
 ### Access URLs
 
@@ -144,7 +119,6 @@ kubectl port-forward svc/mysql 3306:3306
 | Keycloak Admin Panel | http://localhost:8080       |
 | Grafana Dashboard | http://localhost:3000         |
 
----
 
 ## 8. Login Credentials
 
@@ -154,27 +128,19 @@ kubectl port-forward svc/mysql 3306:3306
 
 Use these credentials to access secured services and API documentation.
 
----
-
 ## 9. Observability Tools
 
 - **Grafana** → Preconfigured dashboards
 - **Prometheus** → Metrics scraping
 - **Loki & Tempo** → Logs and distributed tracing for debugging
 
----
-
 ## 10. Kubernetes Debugging Commands
 
-```bash
 # Check pod status
 kubectl get pods
 
 # View real-time logs
 kubectl logs <pod-name>
-```
-
----
 
 ## 11. Summary Table
 
