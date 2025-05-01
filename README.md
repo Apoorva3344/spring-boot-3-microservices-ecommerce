@@ -3,7 +3,7 @@
 
 ---
 
-This document offers **detailed instructions** to set up and run the **Kubernetes-deployed microservices-based e-commerce project** submitted as part of the MSc dissertation artifact by **D3828560**.
+This document offers **detailed instructions** to set up and run the **Kubernetes-deployed microservices-based e-commerce project** submitted as part of the MSc Computing Masters Project artifact by **D3828560**.
 
 ---
 
@@ -211,6 +211,6 @@ kubectl delete -f k8s/
 ---
 
 Prepared by: D3828560  
-MSc IT Project Management (with Advanced Practice) Dissertation Artifact  
+MSc IT Project Management (with Advanced Practice) Computing Masters Project Artifact  
 Teesside University*
 
